@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://cdn.pixabay.com/photo/2023/08/04/10/51/design-8169000_960_720.jpg");
+    background-size: cover;
+    gap: 20px;
+}
+.header>h1{
+    font-size: 1.6em;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+}
+.mensajes{
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+}
+.mensajes input, .mensajes button{
+    display: block;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.mensajes input{
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.mensajes button{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100px;
+    padding: 0;
+    background-color: #09f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.comentarios{
+    width: 100%;
+    min-height: calc(100vh - 500px);
+}
+.comentario{
+    padding: 10px 40px;
+    font-size: 1.2em;
+}
+.fixed{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(12, 12, 21);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: .4s;
+    top: 0;
+}
+.loggin{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: rgb(29, 29, 39);
+    
+}
+.none{
+    top: -100%;
+}
+.logginUsuario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.logginUsuario input, .loggin button{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    border: none;
+}
+.logginUsuario input:focus{
+    outline: 1px solid blue;
+}
+.loggin button{
+    background-color: rgb(153, 255, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.nombreComentario{
+    width: fit-content;
+    background-color: lightgray;
+    border-radius: 6px;
+}
