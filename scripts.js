@@ -16,9 +16,9 @@ function datos() {
     localStorage.setItem("msj", JSON.stringify(arrae));
 }
 
-let msj = JSON.parse(localStorage.getItem("msj"))
+
 function contenido (){
-    msj.forEach(element => {
+    arrae.forEach(element => {
         comentario.innerHTML += 
     `
         <div class="comentario">
